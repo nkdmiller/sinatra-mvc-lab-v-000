@@ -3,7 +3,11 @@ class PigLatinizer
   attr_reader :text
  
   def initialize(text="")
+<<<<<<< HEAD
     @text = text
+=======
+    @text = text.downcase
+>>>>>>> 1ef3e4b1ef6ab60884b23dd6ea11af0c614f86b4
   end 
   
   def self.latinizeWord(word)
@@ -20,6 +24,10 @@ class PigLatinizer
       prefix = word[count..-1]
       suffix = word[0..count-1] + "ay"
       pigLatin = prefix + suffix
+<<<<<<< HEAD
+=======
+      binding.pry
+>>>>>>> 1ef3e4b1ef6ab60884b23dd6ea11af0c614f86b4
       return pigLatin
     end
   end
